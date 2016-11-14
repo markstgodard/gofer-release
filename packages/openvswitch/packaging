@@ -1,0 +1,28 @@
+set -e -u -x
+
+pushd openvswitch
+  tar xvf openvswitch-2.6.1.tgz
+popd
+
+PATH=$PATH:/var/vcap/packages/python/bin
+export PATH
+
+# pip install --upgrade pip
+# install python six library
+pip install six
+
+LD_LIBRARY_PATH=/var/vcap/packages/python/lib
+export LD_LIBRARY_PATH
+
+pushd openvswitch
+apt-get -y install autoconf libtool
+./boot.sh
+./configure \
+    --prefix=${BOSH_INSTALL_TARGET} \
+    --localstatedir=/var/vcap/data/openvswitch \
+    --with-logdir=/var/vcap/sys/log/openvswitch \
+    --with-rundir=/var/vcap/sys/run/openvswitch \
+    --enable-shared CFLAGS="-O2"
+make -j9
+make install
+popd

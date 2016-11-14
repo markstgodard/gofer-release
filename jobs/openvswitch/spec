@@ -1,0 +1,11 @@
+---
+name: openvswitch
+
+templates:
+  dbserver_ctl.erb: bin/dbserver_ctl
+  vswitchd_ctl.erb: bin/vswitchd_ctl
+
+packages:
+  - openvswitch
+
+properties: {}
