@@ -1,0 +1,3 @@
+[submodule "src/github.com/markstgodard/gofer"]
+	path = src/github.com/markstgodard/gofer
+	url = https://github.com/markstgodard/gofer
