@@ -1,7 +1,5 @@
 # gofer-release 🏃
-[Bosh](https://bosh.io) release for [Gofer](http://www.dictionary.com/browse/gofer)
-
-[Gofer](http://www.dictionary.com/browse/gofer) is kind of like [Kuryr](https://github.com/openstack/kuryr) for [Cloud Foundry](https://github.com/cloudfoundry/cf-release) [container networking](https://github.com/cloudfoundry-incubator/netman-release)
+[Bosh](https://bosh.io) release for [Gofer](http://www.dictionary.com/browse/gofer). Gofer is kind of like [Kuryr](https://github.com/openstack/kuryr) for [Cloud Foundry](https://github.com/cloudfoundry/cf-release) [container networking](https://github.com/cloudfoundry-incubator/netman-release)
 
 Kuryr means *messenger*, Gofer means *"go for"*
 
@@ -10,7 +8,7 @@ This release is a prototype for CF container networking using:
 - openvswitch (OVS)
 
 ## Config
-Update bosh manifest to include release and template in diego cell job:
+Update bosh manifest to include `release` and `template` in diego cell job:
 ```yaml
 releases:
 - name: diego
