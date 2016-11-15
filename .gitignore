@@ -6,6 +6,7 @@ config/private.yml
 .final_builds/jobs/**/*.tgz
 .final_builds/packages/**/*.tgz
 bosh-lite
+blobstore
 releases/*.tgz
 output/
 tmp/

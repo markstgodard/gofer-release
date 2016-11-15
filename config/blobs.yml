@@ -1,1 +1,5 @@
---- {}
+---
+go1.7.linux-amd64.tar.gz:
+  object_id: 0ac118ee-3f4e-4b3e-bc0f-4b0891584a46
+  sha: a744e29da97fc3aadad1ee0d7d89b0d899645e50
+  size: 81573766
