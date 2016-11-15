@@ -39,32 +39,7 @@ function sync_package() {
 ## add a -app line or -test line to include a particular app or test
 ## along with all of its dependencies
 
-sync_package cli \
-  -app cli-plugin &
-
-sync_package vxlan-policy-agent \
-  -app vxlan-policy-agent/cmd/vxlan-policy-agent &
-
-sync_package flannel-watchdog \
-  -app flannel-watchdog/cmd/flannel-watchdog &
-
-sync_package policy-server \
-  -app policy-server/cmd/policy-server &
-
-sync_package netmon \
-  -app netmon/cmd/netmon &
-
-GOOS=linux sync_package runc-cni \
-  -app github.com/containernetworking/cni/plugins/main/bridge \
-  -app github.com/containernetworking/cni/plugins/ipam/host-local \
-  -app garden-external-networker &
-
-GOOS=linux sync_package flannel \
-  -app github.com/containernetworking/cni/plugins/main/bridge \
-  -app github.com/containernetworking/cni/plugins/ipam/host-local \
-  -app github.com/containernetworking/cni/plugins/meta/flannel \
-  -app cni-wrapper-plugin &
-
-wait
+sync_package gofer \
+  -app github.com/markstgodard/gofer/cni &
 
 git diff --name-only packages/*/spec
