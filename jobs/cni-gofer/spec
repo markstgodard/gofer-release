@@ -1,0 +1,18 @@
+---
+name: cni-gofer
+
+templates:
+  30-cni-gofer-plugin.conf.erb: config/cni/30-cni-gofer-plugin.conf
+
+packages:
+  - gofer
+
+properties:
+  cni-gofer.neutron_url:
+    description: "neutron server url"
+    default: "http://192.168.56.101:9696"
+  cni-gofer.state_dir:
+    description: "path to where cni plugin stores state"
+    default: "/var/vcap/data/cni-gofer/containers"
+  cni-gofer.bridge_name:
+    default: "ovs-bridge"

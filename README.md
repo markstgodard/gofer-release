@@ -43,4 +43,6 @@ releases:
     . . .
   - name: openvswitch
     release: gofer
+  - name: cni-gofer
+    release: gofer
 ```
