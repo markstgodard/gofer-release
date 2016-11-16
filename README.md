@@ -46,3 +46,16 @@ releases:
   - name: cni-gofer
     release: gofer
 ```
+
+```
+properties:
+
+  garden:
+    network_plugin: /var/vcap/packages/runc-cni/bin/garden-external-networker
+    network_plugin_extra_args:
+    - --configFile=/var/vcap/jobs/garden-cni/config/adapter.json
+
+  garden-cni:
+    cni_config_dir: /var/vcap/jobs/cni-gofer/config/cni
+    cni_plugin_dir: /var/vcap/packages/gofer/bin
+```
