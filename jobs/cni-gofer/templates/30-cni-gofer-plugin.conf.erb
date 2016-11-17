@@ -5,7 +5,7 @@
   "neutronURL": "<%= p('cni-gofer.neutron_url') %>",
   "stateDir": "<%= p('cni-gofer.state_dir') %>",
   "delegate": {
-    "name": "ovs",
+    "name": "cni-neutron-vs",
     "type": "ovs",
     "bridge": "<%= p('cni-gofer.bridge_name') %>"
   }
