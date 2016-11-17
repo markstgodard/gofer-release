@@ -39,7 +39,10 @@ function sync_package() {
 ## add a -app line or -test line to include a particular app or test
 ## along with all of its dependencies
 
-sync_package gofer \
-  -app github.com/markstgodard/gofer/cni &
+GOOS=linux sync_package gofer \
+  -app github.com/markstgodard/gofer/cni \
+  -app github.com/markstgodard/gofer/cni/ovs &
+
+wait
 
 git diff --name-only packages/*/spec
