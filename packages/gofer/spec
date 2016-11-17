@@ -14,11 +14,11 @@ files:
   - github.com/containernetworking/cni/pkg/utils/hwaddr/*.go # gosub
   - github.com/containernetworking/cni/pkg/version/*.go # gosub
   - github.com/containernetworking/cni/vendor/github.com/coreos/go-iptables/iptables/*.go # gosub
-  - github.com/containernetworking/cni/vendor/github.com/vishvananda/netlink/*.go # gosub
-  - github.com/containernetworking/cni/vendor/github.com/vishvananda/netlink/nl/*.go # gosub
-  - github.com/containernetworking/cni/vendor/github.com/vishvananda/netns/*.go # gosub
   - github.com/containernetworking/cni/vendor/golang.org/x/sys/unix/*.go # gosub
   - github.com/containernetworking/cni/vendor/golang.org/x/sys/unix/*.s # gosub
   - github.com/markstgodard/go-neutron/neutron/*.go # gosub
   - github.com/markstgodard/gofer/cni/*.go # gosub
   - github.com/markstgodard/gofer/cni/ovs/*.go # gosub
+  - github.com/vishvananda/netlink/*.go # gosub
+  - github.com/vishvananda/netlink/nl/*.go # gosub
+  - github.com/vishvananda/netns/*.go # gosub
