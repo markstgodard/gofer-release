@@ -7,3 +7,6 @@
 [submodule "src/github.com/containernetworking/cni"]
 	path = src/github.com/containernetworking/cni
 	url = https://github.com/containernetworking/cni
+[submodule "src/github.com/markstgodard/go-keystone"]
+	path = src/github.com/markstgodard/go-keystone
+	url = https://github.com/markstgodard/go-keystone
