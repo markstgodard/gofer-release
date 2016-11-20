@@ -2,8 +2,11 @@
   "name": "cni-neutron-ovs",
   "type": "gofer",
   "cniVersion": "0.2.0",
-  "neutronURL": "<%= p('cni-gofer.neutron_url') %>",
-  "stateDir": "<%= p('cni-gofer.state_dir') %>",
+  "neutron_url": "<%= p('cni-gofer.neutron_url') %>",
+  "keystone_url": "<%= p('cni-gofer.keystone_url') %>",
+  "keystone_username": "<%= p('cni-gofer.keystone_username') %>",
+  "keystone_password": "<%= p('cni-gofer.keystone_password') %>",
+  "state_dir": "<%= p('cni-gofer.state_dir') %>",
   "delegate": {
     "name": "cni-neutron-vs",
     "type": "ovs",

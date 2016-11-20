@@ -16,3 +16,12 @@ properties:
     default: "/var/vcap/data/cni-gofer/containers"
   cni-gofer.bridge_name:
     default: "ovs-bridge"
+  cni-gofer.keystone_url:
+    description: "keystone server url"
+    default: "http://192.168.56.101:5000"
+  cni-gofer.keystone_username:
+    description: "keystone username"
+    default: "cf"
+  cni-gofer.keystone_password:
+    description: "keystone password"
+    default: "secret"

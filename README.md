@@ -58,4 +58,12 @@ properties:
   garden-cni:
     cni_config_dir: /var/vcap/jobs/cni-gofer/config/cni
     cni_plugin_dir: /var/vcap/packages/gofer/bin
+
+  cni-gofer:
+     neutron_url: http://192.168.56.101:9696
+     keystone_url: http://192.168.56.101:5000
+     keystone_username: admin
+     keystone_password: secret
+     state_dir: /var/vcap/data/cni-gofer/containers
+     bridge_name: ovs-bridge
 ```
