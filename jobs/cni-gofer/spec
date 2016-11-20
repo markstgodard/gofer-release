@@ -2,6 +2,7 @@
 name: cni-gofer
 
 templates:
+  pre-start.erb: bin/pre-start
   30-cni-gofer-plugin.conf.erb: config/cni/30-cni-gofer-plugin.conf
 
 packages:
