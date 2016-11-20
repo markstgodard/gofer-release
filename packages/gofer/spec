@@ -16,6 +16,7 @@ files:
   - github.com/containernetworking/cni/vendor/github.com/coreos/go-iptables/iptables/*.go # gosub
   - github.com/containernetworking/cni/vendor/golang.org/x/sys/unix/*.go # gosub
   - github.com/containernetworking/cni/vendor/golang.org/x/sys/unix/*.s # gosub
+  - github.com/markstgodard/go-keystone/keystone/*.go # gosub
   - github.com/markstgodard/go-neutron/neutron/*.go # gosub
   - github.com/markstgodard/gofer/cni/*.go # gosub
   - github.com/markstgodard/gofer/cni/ovs/*.go # gosub
