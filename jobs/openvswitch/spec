@@ -5,6 +5,7 @@ templates:
   dbserver_ctl.erb: bin/dbserver_ctl
   vswitchd_ctl.erb: bin/vswitchd_ctl
   setup_tunnel.erb: bin/setup_tunnel
+  pre-start.erb: bin/pre-start
 
 packages:
   - openvswitch

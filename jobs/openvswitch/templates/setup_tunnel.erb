@@ -10,11 +10,11 @@ TUNNAME="remote-tun"
 TUNPORT="10"
 
 # setup tunnel
-ovs-vsctl add-br ${BRNAME}
+# ovs-vsctl add-br ${BRNAME}
 
 ovs-vsctl add-port ${BRNAME} ${TUNNAME} -- set interface ${TUNNAME} type=vxlan option:remote_ip=${IP_ADDR} option:key=flow ofport_request=${TUNPORT}
 
-ifconfig ${BRNAME} up
+# ifconfig ${BRNAME} up
 
 ovs-ofctl add-flow ${BRNAME} 'table=0,actions=resubmit(,1)'
 
