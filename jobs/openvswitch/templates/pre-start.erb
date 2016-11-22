@@ -7,6 +7,6 @@ export PATH
 BRNAME="ovs-bridge"
 
 # create bridge
-ovs-vsctl add-br ${BRNAME}
+ovs-vsctl --may-exist add-br ${BRNAME}
 
 ifconfig ${BRNAME} up
