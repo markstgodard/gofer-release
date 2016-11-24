@@ -8,7 +8,12 @@ This release is a prototype for CF container networking using:
   - [Neutron](https://github.com/openstack/neutron) API for control plane (create networks,subnets,ports)
   - [Keystone](https://github.com/openstack/keystone) API for authentication
   - uses a delegate openvswitch (OVS) CNI plugin for VIF binding
-- tested using a local [devstack](http://docs.openstack.org/developer/devstack/) for Neutron, Keystone
+
+
+## Prerequisites
+- [devstack](http://docs.openstack.org/developer/devstack/)
+  - using a local devstack for Neutron and Keystone
+  - create a user "cf" to be used by the CNI plugin
 
 ## Config
 Update bosh manifest to include `release` and `template` in diego cell job:
