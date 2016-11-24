@@ -1,7 +1,7 @@
 # 🏃 gofer-release 🏃
-[Bosh](https://bosh.io) release for [Gofer](http://www.dictionary.com/browse/gofer). Gofer is kind of like [Kuryr](https://github.com/openstack/kuryr) for [Cloud Foundry](https://github.com/cloudfoundry/cf-release) [container networking](https://github.com/cloudfoundry-incubator/netman-release)
+[Bosh](https://bosh.io) release for [Gofer](https://github.com/markstgodard/gofer). Gofer is kind of like [Kuryr](https://github.com/openstack/kuryr) for [Cloud Foundry](https://github.com/cloudfoundry/cf-release) [container networking](https://github.com/cloudfoundry-incubator/netman-release)
 
-Kuryr means *messenger*, Gofer means *"go for"*
+Kuryr means *messenger*, Gofer means [*"go for"*](http://www.dictionary.com/browse/gofer)
 
 This release is a prototype for CF container networking using:
 - [CNI](https://github.com/containernetworking/cni) plugin:
