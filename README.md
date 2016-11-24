@@ -4,8 +4,11 @@
 Kuryr means *messenger*, Gofer means *"go for"*
 
 This release is a prototype for CF container networking using:
-- [Neutron](https://github.com/openstack/neutron)-aware [CNI](https://github.com/containernetworking/cni) plugin
-- openvswitch (OVS)
+- [CNI](https://github.com/containernetworking/cni) plugin:
+  - [Neutron](https://github.com/openstack/neutron) API for control plane (create networks,subnets,ports)
+  - [Keystone](https://github.com/openstack/keystone) API for authentication
+  - uses a delegate openvswitch (OVS) CNI plugin for VIF binding
+- tested using a local [devstack](http://docs.openstack.org/developer/devstack/) for Neutron, Keystone
 
 ## Config
 Update bosh manifest to include `release` and `template` in diego cell job:
